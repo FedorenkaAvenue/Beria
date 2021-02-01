@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  redis:
+    container_name: maggallanes_redis
+    build: ./redis
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT} # только для GUI базы
+
+  server:
+    container_name: magallanes_server
+    build: ./server
+
+  nginx:
+    container_name: magalannes_nginx
+    build: ./nginx
+    ports:
+      - 81:80

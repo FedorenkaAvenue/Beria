@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  redis:
+    extends:
+      file: docker-compose.override.yaml
+      service: redis
+    restart: on-failure:5
+
+  server:
+    extends:
+      file: docker-compose.override.yaml
+      service: server
+    build:
+      context: ./server
+      dockerfile: Dockerfile.prod
+    restart: on-failure:5
+
+  nginx:
+    extends:
+      file: docker-compose.override.yaml
+      service: nginx
+    restart: on-failure:5
