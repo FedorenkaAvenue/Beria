@@ -2,5 +2,5 @@
 
 ## Tools🐳
 
-   * `docker exec -it magallanes_nginx bash` enter container
-   * `docker logs -f magallanes_nginx` watch logs
+   * `docker exec -it beria_nginx bash` enter container
+   * `docker logs -f beria_nginx` watch logs

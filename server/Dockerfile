@@ -1,9 +1,11 @@
-FROM golang:1.15.7-alpine3.13
+FROM node:14.15.3-alpine3.10
 
 WORKDIR /app
 
-COPY . .
+COPY package.json ./
+COPY yarn.lock ./
+COPY tsconfig.json ./
 
-RUN make install
+RUN yarn
 
-CMD [ "make", "watch" ]
+CMD [ "yarn", "dev" ]

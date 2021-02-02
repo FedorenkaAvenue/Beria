@@ -7,12 +7,14 @@ services:
       - ./redis/redis.conf:/app/redis.conf
 
   server:
-    restart: unless-stoped
+    restart: unless-stopped
     volumes:
       - ./server:/app
+    environment:
+      - IS_DEV=true
 
   nginx:
     restart: unless-stopped
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/magallanes_nginx.conf:/etc/nginx/conf.d/magallanes_nginx.conf
+      - ./nginx/beria_nginx.conf:/etc/nginx/conf.d/beria_nginx.conf
