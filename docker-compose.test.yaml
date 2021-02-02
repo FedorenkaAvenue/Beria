@@ -5,7 +5,12 @@ services:
     extends:
       file: docker-compose.override.yaml
       service: redis
+    build:
+      context: ./redis
+      dockerfile: Dockerfile.prod
     restart: on-failure:5
+    environment:
+      - REDIS_PASS
 
   server:
     extends:

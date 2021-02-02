@@ -1,5 +1,8 @@
 # server
-server/pkg
-server/bin
-server/src/github.com
-server/src/golang.org
+server/node_modules
+
+# v2 server
+v2/pkg
+v2/bin
+v2/src/github.com
+v2/src/golang.org

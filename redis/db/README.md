@@ -1,4 +1,4 @@
-# Static DB
+# Static cities DB🌍
 
 ## County's cities 
 

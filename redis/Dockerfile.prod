@@ -1,0 +1,8 @@
+FROM redis:alpine
+
+WORKDIR /app
+
+COPY redis_prod.conf ./
+COPY ./backup/dump.rdb /app
+
+CMD [ "redis-server", "/app/redis_prod.conf" ]

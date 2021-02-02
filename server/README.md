@@ -1,1 +1,1 @@
-# Web server
+# Web application

@@ -2,17 +2,19 @@ version: '3.8'
 
 services:
   redis:
-    container_name: maggallanes_redis
+    container_name: beria_redis
     build: ./redis
     ports:
-      - ${REDIS_PORT}:${REDIS_PORT} # только для GUI базы
+      - 6380:6379 # только для GUI базы
 
   server:
-    container_name: magallanes_server
+    container_name: beria_server
     build: ./server
+    environment:
+      - REDIS_HOST
 
   nginx:
-    container_name: magalannes_nginx
+    container_name: beria_nginx
     build: ./nginx
     ports:
       - 81:80
