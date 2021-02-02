@@ -3,11 +3,11 @@
 
 import redisClient from '@db/redis/index';
 
-import cityMap from '../map.json';
+// import cityMap from '../map.json';
 
 (async function pullCitiesDB() {
     try {
-        redisClient.set('ua', JSON.stringify(cityMap));
+        // redisClient.set('ua', JSON.stringify(cityMap));
     } catch(err) {
         console.log('Error: ', err);
     }

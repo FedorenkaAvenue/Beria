@@ -18,3 +18,5 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/beria_nginx.conf:/etc/nginx/conf.d/beria_nginx.conf
+    ports:
+      - 81:80

@@ -9,8 +9,6 @@ services:
       context: ./redis
       dockerfile: Dockerfile.prod
     restart: on-failure:5
-    environment:
-      - REDIS_PASS
 
   server:
     extends:
@@ -20,9 +18,13 @@ services:
       context: ./server
       dockerfile: Dockerfile.prod
     restart: on-failure:5
+    environment:
+      - REDIS_PASS
 
   nginx:
     extends:
       file: docker-compose.override.yaml
       service: nginx
     restart: on-failure:5
+    ports:
+      - 82:80

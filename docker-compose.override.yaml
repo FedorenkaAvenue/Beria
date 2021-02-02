@@ -16,5 +16,3 @@ services:
   nginx:
     container_name: beria_nginx
     build: ./nginx
-    ports:
-      - 81:80
