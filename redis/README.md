@@ -12,7 +12,7 @@
 
       * **root user**: `beria`
       * **root pass**: `dd721260bfe1b3d9601e7fbab36de6d04e2e67b0ef1c53de59d45950db0dd3zc`
-      * **host**: `http://apple-pie.fun`
+      * **host**: `http://fedorenka.online`
       * **port**: `6379`
       * **exposed container port**: `6380`
 

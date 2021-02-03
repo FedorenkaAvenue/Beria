@@ -1,6 +1,6 @@
 # Beria🦅
 
-![online](https://img.shields.io/website?url=http://apple-pie.fun/beria) ![releaze](https://img.shields.io/github/v/release/FedorenkaAvenue/Apple_pie) ![realise date](https://img.shields.io/github/release-date/FedorenkaAvenue/Apple_pie) ![issues](https://img.shields.io/github/issues-raw/FedorenkaAvenue/Apple_pie) ![PR](https://img.shields.io/github/issues-pr-raw/FedorenkaAvenue/Apple_pie)
+![online](https://img.shields.io/website?url=http://beria.fedorenka.online) ![releaze](https://img.shields.io/github/v/release/FedorenkaAvenue/Apple_pie) ![realise date](https://img.shields.io/github/release-date/FedorenkaAvenue/Apple_pie) ![issues](https://img.shields.io/github/issues-raw/FedorenkaAvenue/Apple_pie) ![PR](https://img.shields.io/github/issues-pr-raw/FedorenkaAvenue/Apple_pie)
 
 ## Description
 
@@ -8,7 +8,7 @@ Second part API server for [@Apple🥧pie](https://github.com/FedorenkaAvenue/Ap
 
 ## Join
 
- * **test remote**: http://apple-pie.fun/beria
+ * **test remote**: http://beria.fedorenka.online
  * **local domain**: http://localhost:81
 
 ## Deploy
@@ -24,4 +24,4 @@ Second part API server for [@Apple🥧pie](https://github.com/FedorenkaAvenue/Ap
 
 ## Docs
 
-[Swagger API](http://apple-pie.fun/docs).
+[Swagger API](http://docs.fedorenka.online/?urls.primaryName=Beria).
