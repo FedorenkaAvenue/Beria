@@ -20,9 +20,13 @@ export default async function(req: Request<IParams>, res: Response, next: NextFu
 
             if (!cities) return res.sendStatus(406);
 
-            if (sub) return res.json(cities.filter(
-                ({ title: { en, origin } }) => en.startsWith(sub as string) || origin.startsWith(sub as string)
-            ));
+            if (sub) {
+                const subRegExp = new RegExp(`^${sub}`, 'i');
+
+                return res.json(cities.filter(
+                    ({ title: { en, origin } }) => subRegExp.test(en) || subRegExp.test(origin)
+                ));
+            }
 
             res.json(cities);
         } catch(err) {

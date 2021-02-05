@@ -27,3 +27,13 @@
 ## Docs
 
  * [DB models](./SCHEMA_DOC.md)    
+
+## Guides
+
+<details>
+   <summary>📔Set <b>json</b> data to DB</summary>
+      <ul>
+         <li><code>docker exec -it beria_redis sh</code> to enter container</li>
+         <li><code>redis-cli -x set KEY < JSON_FILE_PATH</code> to set <b>json</b></li>
+      </ul>
+</details>

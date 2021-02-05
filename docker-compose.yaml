@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./redis/redis.conf:/app/redis.conf
+      - ./redis/city_data:/app/city_data
 
   server:
     restart: unless-stopped
