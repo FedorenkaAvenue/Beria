@@ -21,7 +21,7 @@ export default async function(req: Request<IParams>, res: Response, next: NextFu
             if (!cities) return res.sendStatus(406);
 
             if (sub) return res.json(cities.filter(
-                ({ name: { en, origin } }) => en.startsWith(sub as string) || origin.startsWith(sub as string)
+                ({ title: { en, origin } }) => en.startsWith(sub as string) || origin.startsWith(sub as string)
             ));
 
             res.json(cities);

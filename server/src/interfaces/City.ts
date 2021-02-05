@@ -1,6 +1,6 @@
 export type ICity = {
     id: number
-    name: {
+    title: {
         origin: string
         en: string
     }
