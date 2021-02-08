@@ -1,1 +1,1 @@
-# Web application
+# Web server (Golang version)
