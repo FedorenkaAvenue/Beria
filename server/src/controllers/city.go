@@ -37,10 +37,11 @@ func CityController(c *gin.Context) {
 	json.Unmarshal([]byte(cities), &redisCities)
 
 	if subString != "" {
+		var sub = strings.Title(subString)
 		var filteredCities []*City
 
 		for _, v := range redisCities {
-			if strings.HasPrefix(v.Origin, subString) || strings.HasPrefix(v.En, subString) {
+			if strings.HasPrefix(v.Origin, sub) || strings.HasPrefix(v.En, sub) {
 				filteredCities = append(filteredCities, v)
 			}
 		}

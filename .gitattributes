@@ -1,5 +1,5 @@
-docker-compose.* linguist-detectable=true
-docker-compose.* linguist-language=Dockerfile
+# docker-compose.* linguist-detectable=true
+# docker-compose.* linguist-language=Dockerfile
 
 Dockerfile.prod linguist-detectable=true
 Dockerfile.prod linguist-language=Dockerfile
