@@ -12,6 +12,8 @@ services:
     build: ./server
     environment:
       - REDIS_HOST
+      - REDIS_PASS
+      - REDIS_PORT
 
   nginx:
     container_name: beria_nginx

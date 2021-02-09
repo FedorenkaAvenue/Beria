@@ -16,7 +16,7 @@ build:
 
 watch:
 	ulimit -n 1000
-	bin/reflex --start-service -r '\.go$$' make run
+	${GOPATH}/bin/reflex --start-service -r '\.go$$' make run
 
 install:
 	$(MAKE) prep_build
