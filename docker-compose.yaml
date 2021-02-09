@@ -7,12 +7,12 @@ services:
       - ./redis/redis.conf:/app/redis.conf
       - ./redis/city_data:/app/city_data
 
-  # server:
-  #   restart: unless-stopped
-  #   volumes:
-  #     - ./server:/app
-  #   environment:
-  #     - IS_DEV=true
+  server:
+    restart: unless-stopped
+    volumes:
+      - ./server:/app
+    environment:
+      - IS_DEV=true
 
   nginx:
     restart: unless-stopped
