@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN make install
+RUN apk add --no-cache make && \
+    make prep_build && \
+    make dep_install
 
 CMD [ "make", "watch" ]

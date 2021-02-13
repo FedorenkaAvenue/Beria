@@ -19,7 +19,7 @@ services:
       dockerfile: Dockerfile.prod
     restart: on-failure:5
     environment:
-      - APP_PORT=80
+      - REDIS_PASS=dd721260bfe1b3d9601e7fbab36de6d04e2e67b0ef1c53de59d45950db0dd3zc
 
   nginx:
     extends:

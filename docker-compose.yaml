@@ -2,12 +2,14 @@ version: '3.8'
 
 services:
   redis:
+    build: ./redis
     restart: unless-stopped
     volumes:
       - ./redis/redis.conf:/app/redis.conf
       - ./redis/city_data:/app/city_data
 
   server:
+    build: ./server
     restart: unless-stopped
     volumes:
       - ./server:/app

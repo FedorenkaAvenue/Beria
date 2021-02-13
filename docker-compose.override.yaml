@@ -3,16 +3,14 @@ version: '3.8'
 services:
   redis:
     container_name: beria_redis
-    build: ./redis
     ports:
       - 6380:6379 # только для GUI базы
 
   server:
     container_name: beria_server
-    build: ./server
     environment:
+      - APP_PORT=80
       - REDIS_HOST
-      - REDIS_PASS
       - REDIS_PORT
 
   nginx:

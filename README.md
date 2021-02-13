@@ -1,15 +1,15 @@
 # Beria🦅
 
-![online](https://img.shields.io/website?url=http://beria.fedorenka.online) ![releaze](https://img.shields.io/github/v/release/FedorenkaAvenue/Apple_pie) ![realise date](https://img.shields.io/github/release-date/FedorenkaAvenue/Apple_pie) ![issues](https://img.shields.io/github/issues-raw/FedorenkaAvenue/Apple_pie) ![PR](https://img.shields.io/github/issues-pr-raw/FedorenkaAvenue/Apple_pie)
+![online](https://img.shields.io/website?url=http://beria.fedorenka.online) ![issues](https://img.shields.io/github/issues-raw/FedorenkaAvenue/Apple_pie) ![PR](https://img.shields.io/github/issues-pr-raw/FedorenkaAvenue/Apple_pie)
 
 ## Description
 
-Second part API server for [@Apple🥧pie](https://github.com/FedorenkaAvenue/Apple_pie)
+Second part API server for [@Apple🥧pie](https://github.com/FedorenkaAvenue/Apple_pie).
 
 ## Join
 
- * **test remote**: http://beria.fedorenka.online
- * **local domain**: http://localhost:81
+ * **remote test🌐**: http://beria.fedorenka.online
+ * **local domain🐳**: http://localhost:81
 
 ## Deploy
 
@@ -18,7 +18,7 @@ Second part API server for [@Apple🥧pie](https://github.com/FedorenkaAvenue/Ap
     - `docker-compose up --build -d` to deploy and up containers
     - `docker-compose stop` to stop containers
 
-  * ##### test remote
+  * ##### remote test🌐
 
     - push changes to *test* branch and check [action](https://github.com/FedorenkaAvenue/Beria/actions) result
 
